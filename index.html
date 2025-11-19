@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv = "refresh" content = "0 ; url = './html/index.html'"/>
+  <title>Studiova</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.svg" />
+  <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+<!-- NOTE: Please go to the './html/index.html' file to edit -->
+</body>
+
+</html>
