@@ -37,6 +37,10 @@ $(function () {
     })
 
 
+    // Hiking Gallery Owl Carousel - Removed in favor of CSS Marquee
+    // $('.hiking-gallery-slider').owlCarousel({ ... })
+
+
     // Count
     $('.count').each(function () {
 		$(this).prop('Counter', 0).animate({
