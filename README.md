@@ -1,12 +1,20 @@
-# UTS - PMB - Personal Website Hobby & Comic Collection
-# Nama : Muhammad Maulana Firdaussyah
-# NIM  : 233210013
-# Prodi: Sistem Informasi Akuntansi (D3)
+# 📚 UTS - Pemrograman Web Mobile (PMB)
+## Personal Website: Hobby & Comic Collection
 
-**📚 Course Assignment**: Pemrograman Web Mobile SIA Ganjil 2025  
-**👨‍🏫 Instructor**: Basuki Heri W - SA1919G  
-**📝 Assignment Type**: UTS (Ujian Tengah Semester) Project  
-**📅 Submission Deadline**: Friday, November 21, 2025 at 13:00 WIB
+---
+
+### 👤 Student Information
+- **Nama**: Muhammad Maulana Firdaussyah
+- **NIM**: 233210013
+- **Program**: Sistem Informasi Akuntansi (D3)
+
+### 📖 Course Details
+- **Mata Kuliah**: Pemrograman Web Mobile SIA Ganjil 2025
+- **Dosen Pengampu**: Basuki Heri W - SA1919G
+- **Tipe Tugas**: UTS (Ujian Tengah Semester) Project
+- **Deadline**: Jumat, 21 November 2025 pukul 13:00 WIB
+
+---
 
 ---
 
