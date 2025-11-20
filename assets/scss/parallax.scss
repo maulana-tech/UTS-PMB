@@ -1,0 +1,302 @@
+// ========================================
+// PARALLAX EFFECT WITH AOS
+// ========================================
+
+// Variables
+$parallax-offset: 50px;
+$parallax-duration: 1200ms;
+$parallax-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+// ========================================
+// PARALLAX SECTIONS
+// ========================================
+
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  
+  &.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (max-width: 768px) {
+      background-attachment: scroll;
+    }
+  }
+}
+
+// ========================================
+// PARALLAX ELEMENTS - MOVE ON SCROLL
+// ========================================
+
+.parallax-element {
+  transform: translateY(0);
+  transition: transform $parallax-duration $parallax-easing;
+  
+  &[data-aos="parallax-in"] {
+    opacity: 0;
+    transform: translateY($parallax-offset);
+  }
+  
+  &[data-aos="parallax-in"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Parallax slow down effect (background moves slower than content)
+.parallax-slow {
+  transform: translateY(0);
+  
+  &[data-aos="parallax-slow"] {
+    opacity: 0;
+    transform: translateY(calc($parallax-offset * 1.5));
+  }
+  
+  &[data-aos="parallax-slow"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Parallax zoom effect
+.parallax-zoom {
+  transform: scale(1);
+  
+  &[data-aos="parallax-zoom"] {
+    opacity: 0;
+    transform: scale(0.95) translateY($parallax-offset);
+  }
+  
+  &[data-aos="parallax-zoom"].aos-animate {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+// Parallax rotate effect
+.parallax-rotate {
+  transform: rotate(0deg);
+  
+  &[data-aos="parallax-rotate"] {
+    opacity: 0;
+    transform: rotate(-5deg) translateY($parallax-offset);
+  }
+  
+  &[data-aos="parallax-rotate"].aos-animate {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+// ========================================
+// PARALLAX DEPTH EFFECT
+// ========================================
+
+.parallax-depth {
+  perspective: 1200px;
+  
+  .depth-layer {
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    
+    &.layer-1 {
+      transform: translateZ(0px);
+    }
+    
+    &.layer-2 {
+      transform: translateZ(-50px);
+    }
+    
+    &.layer-3 {
+      transform: translateZ(-100px);
+    }
+  }
+}
+
+// ========================================
+// PARALLAX TEXT REVEAL
+// ========================================
+
+.parallax-text {
+  position: relative;
+  
+  &[data-aos="parallax-text"] {
+    h1, h2, h3, h4, h5, h6,
+    p, span {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  &[data-aos="parallax-text"].aos-animate {
+    h1, h2, h3, h4, h5, h6 {
+      animation: parallax-text-reveal 0.8s $parallax-easing forwards;
+    }
+    
+    p, span {
+      animation: parallax-text-reveal 0.8s $parallax-easing forwards 0.1s;
+    }
+  }
+}
+
+@keyframes parallax-text-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ========================================
+// PARALLAX IMAGE EFFECTS
+// ========================================
+
+.parallax-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $parallax-duration $parallax-easing;
+  }
+  
+  &[data-aos="parallax-image"] {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  
+  &[data-aos="parallax-image"].aos-animate {
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+// ========================================
+// PARALLAX CARD EFFECT
+// ========================================
+
+.parallax-card {
+  position: relative;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all $parallax-duration $parallax-easing;
+  
+  &[data-aos="parallax-card"] {
+    opacity: 0;
+    transform: translateY($parallax-offset) rotateX(10deg);
+  }
+  
+  &[data-aos="parallax-card"].aos-animate {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(193, 255, 114, 0.2);
+  }
+}
+
+// ========================================
+// PARALLAX SCROLL INDICATORS
+// ========================================
+
+.parallax-scroll-indicator {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
+  
+  .indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #C1FF72;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &.active {
+      background: #C1FF72;
+      transform: scale(1.3);
+    }
+    
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+// ========================================
+// PARALLAX ANIMATIONS
+// ========================================
+
+@keyframes parallax-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes parallax-swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.parallax-float {
+  animation: parallax-float 4s ease-in-out infinite;
+}
+
+.parallax-swing {
+  animation: parallax-swing 3s ease-in-out infinite;
+}
+
+// ========================================
+// RESPONSIVE PARALLAX
+// ========================================
+
+@media (max-width: 768px) {
+  .parallax-element {
+    transform: translateY(0) !important;
+    
+    &[data-aos="parallax-in"] {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .parallax-slow {
+    transform: translateY(0) !important;
+  }
+  
+  .parallax-card {
+    &[data-aos="parallax-card"] {
+      transform: translateY(20px);
+    }
+  }
+}
