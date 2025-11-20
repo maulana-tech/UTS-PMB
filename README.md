@@ -69,7 +69,7 @@ A modern, responsive portfolio website built with Bootstrap 5 featuring a comic 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: `#0d6cf0` (Modern Blue)
+- **Primary**: `#C1FF72` (Modern Green)
 - **Secondary**: `#1F2A2E` (Dark Charcoal)
 - **Light Gray**: `#F4F8FA`
 - **Accent**: Various gradients and overlays
