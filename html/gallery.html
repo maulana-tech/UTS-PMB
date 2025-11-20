@@ -11,21 +11,73 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <script src="../assets/js/preloader.js"></script>
   <style>
-    /* Gallery Item Pop Animation */
+    /* Gallery Grid Section */
+    .gallery-content {
+      background: #ffffff;
+    }
+
+    /* Gallery Item Premium Card */
     .gallery-item {
       cursor: pointer;
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 4px 16px rgba(31, 42, 46, 0.08);
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .gallery-item:hover {
-      transform: scale(1.08);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      transform: translateY(-12px);
+      box-shadow: 0 16px 40px rgba(193, 255, 114, 0.2), 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item .card-img {
+      transition: transform 0.35s ease;
+      object-fit: cover;
+    }
+
+    .gallery-item:hover .card-img {
+      transform: scale(1.05);
     }
 
     /* Smooth overlay transition */
     .gallery-overlay {
-      transition: opacity 0.3s ease;
+      transition: all 0.35s ease;
+      backdrop-filter: blur(0px);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      backdrop-filter: blur(4px);
+    }
+
+    /* Badge styling */
+    .badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      background-color: rgba(193, 255, 114, 0.95) !important;
+      color: #1F2A2E !important;
+      box-shadow: 0 4px 12px rgba(193, 255, 114, 0.3);
+    }
+
+    /* Gallery grid spacing */
+    .gallery-grid {
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .gallery-item:hover {
+        transform: translateY(-8px);
+      }
     }
   </style>
 </head>
@@ -143,16 +195,20 @@
         <div class="d-flex flex-column gap-5 gap-xl-11">
           <!-- Gallery Grid -->
           <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-            <h2 class="fs-13 mb-7 text-dark">Photo Collection</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="d-flex align-items-center gap-4 mb-8">
+              <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin" width="24" height="24">
+              <h2 class="mb-0 fs-13 text-dark">Hiking Adventures - 22 Photos</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
               <!-- Gallery Item 1 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/bluelock/bluelock-1.jpg" alt="Gallery Image 1" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 1</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Captured Memories</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-1.jpg" alt="Mountain View" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Mountain View</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Beautiful Scenery</p>
                     </div>
                   </div>
                 </div>
@@ -160,12 +216,13 @@
 
               <!-- Gallery Item 2 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/lookism/lookism-2.jpg" alt="Gallery Image 2" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 2</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Beautiful Moments</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-2.jpg" alt="Forest Trail" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Forest Trail</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Nature's Beauty</p>
                     </div>
                   </div>
                 </div>
@@ -173,12 +230,13 @@
 
               <!-- Gallery Item 3 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/leveling/leveling-3.jpg" alt="Gallery Image 3" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 3</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Creative Shots</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-3.jpg" alt="Summit Success" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Summit Success</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Reaching Heights</p>
                     </div>
                   </div>
                 </div>
@@ -186,12 +244,13 @@
 
               <!-- Gallery Item 4 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/estatedeveloper/estatedeveloper-4.jpg" alt="Gallery Image 4" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 4</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Unforgettable</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-4.jpg" alt="Adventure Time" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Adventure Time</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Unforgettable</p>
                     </div>
                   </div>
                 </div>
@@ -199,12 +258,13 @@
 
               <!-- Gallery Item 5 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/portfolio/portfolio-1.jpg" alt="Gallery Image 5" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 5</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Inspiration</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-5.jpg" alt="Nature's Gift" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Nature's Gift</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Wilderness</p>
                     </div>
                   </div>
                 </div>
@@ -212,12 +272,13 @@
 
               <!-- Gallery Item 6 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/portfolio/portfolio-2.jpg" alt="Gallery Image 6" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 6</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Visual Art</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-6.jpg" alt="Golden Hour" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Golden Hour</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Perfect Moments</p>
                     </div>
                   </div>
                 </div>
@@ -225,12 +286,13 @@
 
               <!-- Gallery Item 7 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/portfolio/portfolio-3.jpg" alt="Gallery Image 7" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 7</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Precious Times</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-1.jpg" alt="Mountain View" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Mountain View</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Scenic Beauty</p>
                     </div>
                   </div>
                 </div>
@@ -238,12 +300,13 @@
 
               <!-- Gallery Item 8 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/resources/resources-1.jpg" alt="Gallery Image 8" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 8</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Great Memories</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-2.jpg" alt="Forest Trail" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Forest Trail</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Great Memories</p>
                     </div>
                   </div>
                 </div>
@@ -251,12 +314,13 @@
 
               <!-- Gallery Item 9 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/resources/resources-2.jpg" alt="Gallery Image 9" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 9</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Adventure</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-3.jpg" alt="Summit Success" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Summit Success</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Adventure</p>
                     </div>
                   </div>
                 </div>
@@ -264,12 +328,13 @@
 
               <!-- Gallery Item 10 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/resources/resources-3.jpg" alt="Gallery Image 10" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 10</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Joy & Happiness</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-4.jpg" alt="Adventure Time" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Adventure Time</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Joy & Happiness</p>
                     </div>
                   </div>
                 </div>
@@ -277,12 +342,13 @@
 
               <!-- Gallery Item 11 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/about/about-img-1.jpg" alt="Gallery Image 11" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 11</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">New Perspective</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-5.jpg" alt="Nature's Gift" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Nature's Gift</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Timeless</p>
                     </div>
                   </div>
                 </div>
@@ -290,12 +356,13 @@
 
               <!-- Gallery Item 12 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/about/about-img-2.jpg" alt="Gallery Image 12" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 12</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Beautiful Life</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-6.jpg" alt="Golden Hour" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Golden Hour</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Beautiful Life</p>
                     </div>
                   </div>
                 </div>
@@ -303,12 +370,13 @@
 
               <!-- Gallery Item 13 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/about/about-img-3.jpg" alt="Gallery Image 13" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 13</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Timeless</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-1.jpg" alt="Mountain View" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Mountain View</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Timeless</p>
                     </div>
                   </div>
                 </div>
@@ -316,12 +384,13 @@
 
               <!-- Gallery Item 14 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/onepunchman/onepunchman-1.jpg" alt="Gallery Image 14" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 14</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Perfect Moment</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-2.jpg" alt="Forest Trail" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Forest Trail</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Perfect Moment</p>
                     </div>
                   </div>
                 </div>
@@ -329,12 +398,13 @@
 
               <!-- Gallery Item 15 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/doombreaker/doombreaker-2.jpg" alt="Gallery Image 15" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 15</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Cherished</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-3.jpg" alt="Summit Success" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Summit Success</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Cherished</p>
                     </div>
                   </div>
                 </div>
@@ -342,12 +412,13 @@
 
               <!-- Gallery Item 16 -->
               <div class="col">
-                <div class="gallery-item position-relative overflow-hidden rounded-3" style="aspect-ratio: 1 / 1;">
-                  <img src="../assets/images/komik/jujutsukaisen/jujutsukaisen-3.jpg" alt="Gallery Image 16" class="img-fluid w-100 h-100 object-fit-cover">
-                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4 bg-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);">
-                    <div>
-                      <p class="mb-0 text-white fs-6 fw-semibold">Moment 16</p>
-                      <p class="mb-0 text-white text-opacity-70 fs-7">Lasting Impression</p>
+                <div class="gallery-item card position-relative overflow-hidden h-100 border-0 shadow-sm" style="aspect-ratio: 1 / 1; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                  <img src="../assets/images/hiking/hiking-4.jpg" alt="Adventure Time" class="card-img w-100 h-100 object-fit-cover">
+                  <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-end justify-content-between p-4" style="background: linear-gradient(135deg, rgba(193,255,114,0.1) 0%, rgba(0,0,0,0.7) 100%);">
+                    <span class="badge text-dark bg-primary">Hiking</span>
+                    <div class="text-end">
+                      <p class="mb-1 text-white fs-6 fw-bold">Adventure Time</p>
+                      <p class="mb-0 text-white text-opacity-75 fs-7">Lasting Impression</p>
                     </div>
                   </div>
                 </div>
