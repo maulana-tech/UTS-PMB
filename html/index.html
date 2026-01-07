@@ -103,8 +103,8 @@
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
-                <p class="mb-0 text-white fs-5 text-opacity-70">Welcome to my <span
-                    class="text-primary">personal</span> hobby website.</p>
+                <p class="mb-0 text-white fs-5 text-opacity-70">Welcome to my <span class="text-primary">personal</span>
+                  hobby website.</p>
               </div>
             </div>
           </div>
@@ -177,117 +177,155 @@
         </div>
       </div>
       <div class="position-absolute bottom-0 start-0" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
-        <img src="../assets/images/backgrounds/stats-facts-bg.svg" alt="" class="img-fluid">
+        <div class="terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div>
+          <div class="terminal-text" id="typewriter-text"></div>
+        </div>
       </div>
     </section>
 
-    <!--  Featured Projects Section -->
-    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
-      <div class="d-flex flex-column gap-5 gap-xl-11">
-        <div class="container">
-          <div class="row gap-7 gap-xl-0">
-            <div class="col-xl-4 col-xxl-4">
+    <!--  Why choose us Section -->
+    <section class="why-choose-us py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="row justify-content-between gap-5 gap-xl-0">
+          <div class="col-xl-3 col-xxl-3">
+            <div class="d-flex flex-column gap-7">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
                   class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
                 <hr class="border-line">
-                <span class="badge text-bg-dark">Portfolio</span>
+                <span class="badge text-bg-dark">About us</span>
               </div>
-            </div>
-            <div class="col-xl-8 col-xxl-7">
-              <div class="row">
-                <div class="col-xxl-8">
-                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
-                    <h2 class="mb-0">Featured projects</h2>
-                    <p class="fs-5 mb-0">A glimpse into our creativity—exploring innovative designs, successful
-                      collaborations, and transformative digital experiences.</p>
-                  </div>
-                </div>
-              </div>
+              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">About Me</h2>
+              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">Saya Muhammad
+                Maulana Firdaussyah (NIM: 233210013), mahasiswa D3 Accounting Information Systems di Universitas
+                Teknologi Digital Indonesia. Saya adalah seorang Fullstack Web Developer dengan pengalaman 1.5+ tahun di
+                bidang teknologi web. Passionate tentang membangun aplikasi web yang scalable dan user-focused
+                menggunakan teknologi modern seperti React, Next.js, dan Tailwind CSS. Saya juga aktif di komunitas tech
+                sebagai Student Developer di GDSC dan GDG, mentoring peers, dan berkontribusi pada inovasi digital.
+                Selain coding, saya menyukai olahraga (terutama sepakbola), hiking, dan eksplorasi AI/ML technologies.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="featured-projects-slider px-3">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="portfolio d-flex flex-column gap-6">
-                <div class="portfolio-img position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x340/ec4899/ffffff?text=Lana+Developer" alt="" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="project-1.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
-                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Lana Developer Portfolio</h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">TypeScript</span>
-                    <span class="badge text-dark border">Next.js</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="portfolio d-flex flex-column gap-6">
-                <div class="portfolio-img position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x340/10b981/ffffff?text=Nutrition+AI+App" alt="" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="project-2.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
-                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Nutrition AI App</h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">AI</span>
-                    <span class="badge text-dark border">Machine Learning</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="portfolio d-flex flex-column gap-6">
-                <div class="portfolio-img position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x340/8b5cf6/ffffff?text=Social+Web" alt="" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="project-3.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
-                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Social Web Platform</h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Next.js</span>
-                    <span class="badge text-dark border">React</span>
+          <div class="col-xl-9 col-xxl-8">
+            <div class="row">
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up"
+                  data-aos-delay="100" data-aos-duration="1000">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column gap-3 position-relative z-1">
+                      <ul class="list-unstyled mb-0 hstack gap-1">
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                      </ul>
+                      <p class="mb-0 fs-6 text-dark">Muhammad's innovative approach to web development transformed our
+                        digital presence with scalable, user-focused solutions.
+                      </p>
+                    </div>
+                    <div class="position-relative z-1">
+                      <div class="pb-6 border-bottom">
+                        <h2 class="mb-0">1.5+</h2>
+                        <p class="mb-0">Years of Web Dev Experience</p>
+                      </div>
+                      <div class="hstack gap-6 pt-6">
+                        <img src="../assets/images/profile/avatar-1.png" alt=""
+                          class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
+                        <div>
+                          <h5 class="mb-0">Muhammad Maulana</h5>
+                          <p class="mb-0">Fullstack Web Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0">
+                      <img src="../assets/images/backgrounds/customer-satisfaction-bg.svg" alt="" class="img-fluid">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="portfolio d-flex flex-column gap-6">
-                <div class="portfolio-img position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x340/6366f1/ffffff?text=Try+Rehearse+AI" alt="" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="project-4.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
-                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
-                    </a>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="position-relative">
+                    <img src="../assets/images/services/services-img-2.jpg" alt="" class="img-fluid w-100">
+                  </div>
+
+                  <div class="card bg-dark">
+                    <div class="card-body d-flex flex-column gap-7">
+                      <div>
+                        <h2 class="mb-0 text-white">10+</h2>
+                        <p class="mb-0 text-white text-opacity-70">Tech Stack: React, Next.js, JavaScript, Tailwind CSS,
+                          Node.js, SQL</p>
+                      </div>
+                      <ul class="d-flex align-items-center mb-0 gap-2">
+                        <li>
+                          <div
+                            class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center"
+                            style="width: 44px; height: 44px;">
+                            <iconify-icon icon="mdi:react" class="fs-4"></iconify-icon>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center"
+                            style="width: 44px; height: 44px;">
+                            <iconify-icon icon="mdi:language-javascript" class="fs-4"></iconify-icon>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center"
+                            style="width: 44px; height: 44px;">
+                            <iconify-icon icon="mdi:tailwind" class="fs-4"></iconify-icon>
+                          </div>
+                        </li>
+                        <li>
+                          <div
+                            class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center"
+                            style="width: 44px; height: 44px;">
+                            <iconify-icon icon="mdi:database" class="fs-4"></iconify-icon>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Try Rehearse AI</h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">AI</span>
-                    <span class="badge text-dark border">Interview</span>
+              </div>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300"
+                  data-aos-duration="1000">
+                  <span
+                    class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h2 class="mb-0">100+</h2>
+                      <p class="mb-0 text-dark">Telah mengerjakan project</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <a href="index.html" class="logo-dark text-dark fs-8 fw-bolder text-decoration-none">
+                        maulana-tech
+                      </a>
+                      <p class="mb-0 fs-5 text-dark">Saya adalah Fullstack Web Developer dengan spesialisasi React,
+                        Next.js, dan Tailwind CSS, terus berinovasi dalam menciptakan solusi digital yang scalable dan
+                        user-focused.</p>
+                    </div>
                   </div>
+                  <span
+                    class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
                 </div>
               </div>
             </div>
@@ -295,6 +333,7 @@
         </div>
       </div>
     </section>
+
 
     <!--  Services Section -->
     <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
@@ -316,7 +355,8 @@
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
                     <h2 class="mb-0 text-white">My Hobbies</h2>
-                    <p class="fs-5 mb-0 text-white text-opacity-70">Here are the things I love to do in my free time.</p>
+                    <p class="fs-5 mb-0 text-white text-opacity-70">Here are the things I love to do in my free time.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -423,129 +463,7 @@
       </div>
     </section>
 
-    <!--  Why choose us Section -->
-    <section class="why-choose-us py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="row justify-content-between gap-5 gap-xl-0">
-          <div class="col-xl-3 col-xxl-3">
-            <div class="d-flex flex-column gap-7">
-              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
-                <hr class="border-line">
-                <span class="badge text-bg-dark">About us</span>
-              </div>
-              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">About Me</h2>
-              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">Saya Muhammad Maulana Firdaussyah (NIM: 233210013), mahasiswa D3 Accounting Information Systems di Universitas Teknologi Digital Indonesia. Saya adalah seorang Fullstack Web Developer dengan pengalaman 1.5+ tahun di bidang teknologi web. Passionate tentang membangun aplikasi web yang scalable dan user-focused menggunakan teknologi modern seperti React, Next.js, dan Tailwind CSS. Saya juga aktif di komunitas tech sebagai Student Developer di GDSC dan GDG, mentoring peers, dan berkontribusi pada inovasi digital. Selain coding, saya menyukai olahraga (terutama sepakbola), hiking, dan eksplorasi AI/ML technologies.</p>
-            </div>
-          </div>
-          <div class="col-xl-9 col-xxl-8">
-            <div class="row">
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up"
-                  data-aos-delay="100" data-aos-duration="1000">
-                  <div class="card-body d-flex flex-column justify-content-between">
-                    <div class="d-flex flex-column gap-3 position-relative z-1">
-                      <ul class="list-unstyled mb-0 hstack gap-1">
-                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
-                              class="fs-6 text-dark"></iconify-icon></a></li>
-                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
-                              class="fs-6 text-dark"></iconify-icon></a></li>
-                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
-                              class="fs-6 text-dark"></iconify-icon></a></li>
-                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
-                              class="fs-6 text-dark"></iconify-icon></a></li>
-                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone"
-                              class="fs-6 text-dark"></iconify-icon></a></li>
-                      </ul>
-                      <p class="mb-0 fs-6 text-dark">Muhammad's innovative approach to web development transformed our digital presence with scalable, user-focused solutions.
-                      </p>
-                    </div>
-                    <div class="position-relative z-1">
-                      <div class="pb-6 border-bottom">
-                        <h2 class="mb-0">1.5+</h2>
-                        <p class="mb-0">Years of Web Dev Experience</p>
-                      </div>
-                      <div class="hstack gap-6 pt-6">
-                        <img src="../assets/images/profile/avatar-1.png" alt=""
-                          class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
-                        <div>
-                          <h5 class="mb-0">Muhammad Maulana</h5>
-                          <p class="mb-0">Fullstack Web Developer</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="position-absolute bottom-0 end-0">
-                      <img src="../assets/images/backgrounds/customer-satisfaction-bg.svg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                  <div class="position-relative">
-                    <img src="../assets/images/services/services-img-2.jpg" alt="" class="img-fluid w-100">
-                  </div>
 
-                  <div class="card bg-dark">
-                    <div class="card-body d-flex flex-column gap-7">
-                      <div>
-                        <h2 class="mb-0 text-white">10+</h2>
-                        <p class="mb-0 text-white text-opacity-70">Tech Stack: React, Next.js, JavaScript, Tailwind CSS, Node.js, SQL</p>
-                      </div>
-                      <ul class="d-flex align-items-center mb-0 gap-2">
-                        <li>
-                          <div class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
-                            <iconify-icon icon="mdi:react" class="fs-4"></iconify-icon>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
-                            <iconify-icon icon="mdi:language-javascript" class="fs-4"></iconify-icon>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
-                            <iconify-icon icon="mdi:tailwind" class="fs-4"></iconify-icon>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="rounded-circle border border-2 border-white bg-white d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
-                            <iconify-icon icon="mdi:database" class="fs-4"></iconify-icon>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-7 mb-lg-0">
-                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300"
-                  data-aos-duration="1000">
-                  <span
-                    class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
-                  <div class="card-body d-flex flex-column justify-content-between">
-                    <div>
-                      <h2 class="mb-0">100+</h2>
-                      <p class="mb-0 text-dark">Telah mengerjakan project</p>
-                    </div>
-                    <div class="d-flex flex-column gap-3">
-                      <a href="index.html" class="logo-dark text-dark fs-8 fw-bolder text-decoration-none">
-                        maulana-tech
-                      </a>
-                      <p class="mb-0 fs-5 text-dark">Saya adalah Fullstack Web Developer dengan spesialisasi React, Next.js, dan Tailwind CSS, terus berinovasi dalam menciptakan solusi digital yang scalable dan user-focused.</p>
-                    </div>
-                  </div>
-                  <span
-                    class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--  Hiking Gallery Section (formerly Testimonial) -->
     <section class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
@@ -556,7 +474,7 @@
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
                 <hr class="border-line bg-white">
                 <span class="badge text-bg-dark">Hiking Gallery</span>
               </div>
@@ -567,19 +485,22 @@
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
                     <h2 class="mb-0">My Hiking Adventures</h2>
-                    <p class="fs-5 mb-0 text-opacity-70">Exploring nature and conquering peaks. Here are some moments from my journeys.</p>
+                    <p class="fs-5 mb-0 text-opacity-70">Exploring nature and conquering peaks. Here are some moments
+                      from my journeys.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div class="marquee w-100 d-flex align-items-center overflow-hidden">
             <div class="marquee-content d-flex align-items-center">
               <!-- Item 1 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-1.jpg" class="card-img-top object-fit-cover" alt="Hiking 1" style="height: 300px;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="100"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-1.jpg" class="card-img-top object-fit-cover" alt="Hiking 1"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Mountain View</h5>
                     <p class="card-text">Beautiful scenery from the journey.</p>
@@ -588,8 +509,10 @@
               </div>
               <!-- Item 2 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-2.jpg" class="card-img-top object-fit-cover" alt="Hiking 2" style="height: 300px;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="200"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-2.jpg" class="card-img-top object-fit-cover" alt="Hiking 2"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Forest Trail</h5>
                     <p class="card-text">Walking through nature's beauty.</p>
@@ -598,8 +521,10 @@
               </div>
               <!-- Item 3 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-3.jpg" class="card-img-top object-fit-cover" alt="Hiking 3" style="height: 300px;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="300"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-3.jpg" class="card-img-top object-fit-cover" alt="Hiking 3"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Summit Success</h5>
                     <p class="card-text">Reaching new heights together.</p>
@@ -608,8 +533,10 @@
               </div>
               <!-- Item 4 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-4.jpg" class="card-img-top object-fit-cover" alt="Hiking 4" style="height: 300px;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="400"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-4.jpg" class="card-img-top object-fit-cover" alt="Hiking 4"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Adventure Time</h5>
                     <p class="card-text">Unforgettable moments.</p>
@@ -618,18 +545,22 @@
               </div>
               <!-- Item 5 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-5.jpg" class="card-img-top object-fit-cover" alt="Hiking 5" style="height: 300px;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="500"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-5.jpg" class="card-img-top object-fit-cover" alt="Hiking 5"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Nature's Gift</h5>
                     <p class="card-text">Exploring the wilderness.</p>
                   </div>
                 </div>
               </div>
-               <!-- Item 6 -->
-               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
-                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                  <img src="../assets/images/hiking/hiking-6.jpg" class="card-img-top object-fit-cover" alt="Hiking 6" style="height: 300px;">
+              <!-- Item 6 -->
+              <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
+                <div class="card w-100 overflow-hidden" data-aos="fade-up" data-aos-delay="600"
+                  data-aos-duration="1000">
+                  <img src="../assets/images/hiking/hiking-6.jpg" class="card-img-top object-fit-cover" alt="Hiking 6"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Golden Hour</h5>
                     <p class="card-text">Perfect mountain moments.</p>
@@ -640,7 +571,8 @@
               <!-- Item 1 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-1.jpg" class="card-img-top object-fit-cover" alt="Hiking 1" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-1.jpg" class="card-img-top object-fit-cover" alt="Hiking 1"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Mountain View</h5>
                     <p class="card-text">Beautiful scenery from the journey.</p>
@@ -650,7 +582,8 @@
               <!-- Item 2 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-2.jpg" class="card-img-top object-fit-cover" alt="Hiking 2" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-2.jpg" class="card-img-top object-fit-cover" alt="Hiking 2"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Forest Trail</h5>
                     <p class="card-text">Walking through nature's beauty.</p>
@@ -660,7 +593,8 @@
               <!-- Item 3 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-3.jpg" class="card-img-top object-fit-cover" alt="Hiking 3" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-3.jpg" class="card-img-top object-fit-cover" alt="Hiking 3"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Summit Success</h5>
                     <p class="card-text">Reaching new heights together.</p>
@@ -670,7 +604,8 @@
               <!-- Item 4 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-4.jpg" class="card-img-top object-fit-cover" alt="Hiking 4" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-4.jpg" class="card-img-top object-fit-cover" alt="Hiking 4"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Adventure Time</h5>
                     <p class="card-text">Unforgettable moments.</p>
@@ -680,17 +615,19 @@
               <!-- Item 5 -->
               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-5.jpg" class="card-img-top object-fit-cover" alt="Hiking 5" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-5.jpg" class="card-img-top object-fit-cover" alt="Hiking 5"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Nature's Gift</h5>
                     <p class="card-text">Exploring the wilderness.</p>
                   </div>
                 </div>
               </div>
-               <!-- Item 6 -->
-               <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
+              <!-- Item 6 -->
+              <div class="marquee-tag me-4" style="width: 350px; flex-shrink: 0;">
                 <div class="card w-100 overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-6.jpg" class="card-img-top object-fit-cover" alt="Hiking 6" style="height: 300px;">
+                  <img src="../assets/images/hiking/hiking-6.jpg" class="card-img-top object-fit-cover" alt="Hiking 6"
+                    style="height: 300px;">
                   <div class="card-body bg-white">
                     <h5 class="card-title">Golden Hour</h5>
                     <p class="card-text">Perfect mountain moments.</p>
@@ -703,138 +640,7 @@
         </div>
       </div>
     </section>
-
-    <!--  Meet our team Section -->
-    <section class="meet-our-team py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-11">
-          <div class="row gap-7 gap-xl-0">
-            <div class="col-xl-4 col-xxl-4">
-              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
-                <hr class="border-line bg-white">
-                <span class="badge text-bg-dark">My Hobbies</span>
-              </div>
-            </div>
-            <div class="col-xl-8 col-xxl-7">
-              <div class="row">
-                <div class="col-xxl-8">
-                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
-                    <h2 class="mb-0">My Hobbies</h2>
-                    <p class="fs-5 mb-0 text-opacity-70">Hobby saya adalah coding - menciptakan solusi digital yang inovatif, dan jalan-jalan bareng pacar untuk menikmati momen bersama dan menciptakan kenangan indah.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="meet-team parallax-card d-flex flex-column gap-4" data-aos="parallax-card" data-aos-delay="100"
-                data-aos-duration="1000">
-                <div class="meet-team-img position-relative overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-1.jpg" alt="team-img" class="img-fluid w-100">
-                  <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                    <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-twitter.svg" alt="twitter"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-be.svg" alt="be"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="meet-team-details">
-                  <h4 class="mb-0">My Girlfriend</h4>
-                  <p class="mb-0">Pacar Saya</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="meet-team parallax-card d-flex flex-column gap-4" data-aos="parallax-card" data-aos-delay="200"
-                data-aos-duration="1000">
-                <div class="meet-team-img position-relative overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-2.jpg" alt="team-img" class="img-fluid w-100">
-                  <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                    <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-twitter.svg" alt="twitter"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-be.svg" alt="be"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="meet-team-details">
-                  <h4 class="mb-0">Quality Time</h4>
-                  <p class="mb-0">Jalan-jalan Bareng Pacar</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="meet-team parallax-card d-flex flex-column gap-4" data-aos="parallax-card" data-aos-delay="300"
-                data-aos-duration="1000">
-                <div class="meet-team-img position-relative overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-3.jpg" alt="team-img" class="img-fluid w-100">
-                  <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                    <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-twitter.svg" alt="twitter"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-be.svg" alt="be"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="meet-team-details">
-                  <h4 class="mb-0">Hiking Date</h4>
-                  <p class="mb-0">Naik gunung bareng</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="meet-team parallax-card d-flex flex-column gap-4" data-aos="parallax-card" data-aos-delay="400"
-                data-aos-duration="1000">
-                <div class="meet-team-img position-relative overflow-hidden">
-                  <img src="../assets/images/hiking/hiking-4.jpg" alt="team-img" class="img-fluid w-100">
-                  <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
-                    <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-twitter.svg" alt="twitter"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-be.svg" alt="be"></a></li>
-                      <li><a href="#!"
-                          class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center"><img
-                            src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="meet-team-details">
-                  <h4 class="mb-0">Dan lain-lain</h4>
-                  <p class="mb-0">Aktifitas lainnya</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!--  Pricing Section -->
     <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray">
@@ -846,7 +652,7 @@
                 <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                   data-aos-duration="1000">
                   <span
-                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
+                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
                   <hr class="border-line bg-white">
                   <span class="badge text-bg-dark">Sepakbola</span>
                 </div>
@@ -857,7 +663,8 @@
                     <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                       data-aos-duration="1000">
                       <h2 class="mb-0">My 3 Favorite Things di Sepakbola</h2>
-                      <p class="fs-5 mb-0 text-opacity-70">Tiga hal yang paling saya cintai dalam dunia sepakbola: klub yang luar biasa, pemain legendaris, dan tim nasional yang menginspirasi.</p>
+                      <p class="fs-5 mb-0 text-opacity-70">Tiga hal yang paling saya cintai dalam dunia sepakbola: klub
+                        yang luar biasa, pemain legendaris, dan tim nasional yang menginspirasi.</p>
                     </div>
                   </div>
                 </div>
@@ -873,7 +680,8 @@
                         <h3 class="mb-0">🔵</h3>
                         <p class="mb-0">Blaugrana</p>
                       </div>
-                      <p class="mb-0">Klub terbesar di Spanyol dengan tradisi bermain yang indah dan penuh inovasi dalam dunia sepakbola.</p>
+                      <p class="mb-0">Klub terbesar di Spanyol dengan tradisi bermain yang indah dan penuh inovasi dalam
+                        dunia sepakbola.</p>
                     </div>
                     <div class="pt-8 border-top d-flex flex-column gap-6">
                       <h6 class="mb-0 fw-normal">What’s Included:</h6>
@@ -926,7 +734,8 @@
                         <h3 class="mb-0">🐐</h3>
                         <p class="mb-0">GOAT</p>
                       </div>
-                      <p class="mb-0">Pemain paling berbakat sepanjang masa dengan skill luar biasa dan prestasi yang tak tertandingi.</p>
+                      <p class="mb-0">Pemain paling berbakat sepanjang masa dengan skill luar biasa dan prestasi yang
+                        tak tertandingi.</p>
                     </div>
                     <div class="pt-8 border-top d-flex flex-column gap-6">
                       <h6 class="mb-0 fw-normal">What’s Included:</h6>
@@ -957,7 +766,8 @@
                         </li>
                       </ul>
                     </div>
-                    <a href="https://www.espnfc.com/player/_/id/5854" target="_blank" class="btn w-100 justify-content-center">
+                    <a href="https://www.espnfc.com/player/_/id/5854" target="_blank"
+                      class="btn w-100 justify-content-center">
                       <span class="btn-text">Learn More</span>
                       <iconify-icon icon="lucide:arrow-up-right"
                         class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -974,7 +784,8 @@
                         <h3 class="mb-0">🇩🇪</h3>
                         <p class="mb-0">Die Mannschaft</p>
                       </div>
-                      <p class="mb-0">Tim nasional legendaris dengan sejarah penuh prestasi dan keunggulan di panggung dunia.</p>
+                      <p class="mb-0">Tim nasional legendaris dengan sejarah penuh prestasi dan keunggulan di panggung
+                        dunia.</p>
                     </div>
                     <div class="pt-8 border-top d-flex flex-column gap-6">
                       <h6 class="mb-0 fw-normal">What’s Included:</h6>
@@ -1115,7 +926,7 @@
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
                 <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">08</span>
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
                 <hr class="border-line bg-white">
                 <span class="badge text-bg-dark">FAQs</span>
               </div>
@@ -1145,7 +956,10 @@
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body pt-0 fs-5 text-dark">Saya menguasai berbagai teknologi modern untuk pengembangan web, termasuk React.js, Next.js, JavaScript, Tailwind CSS, Node.js, SQL, dan full-stack web development. Saya juga aktif belajar teknologi terbaru untuk meningkatkan kemampuan.</div>
+                    <div class="accordion-body pt-0 fs-5 text-dark">Saya menguasai berbagai teknologi modern untuk
+                      pengembangan web, termasuk React.js, Next.js, JavaScript, Tailwind CSS, Node.js, SQL, dan
+                      full-stack web development. Saya juga aktif belajar teknologi terbaru untuk meningkatkan
+                      kemampuan.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -1157,7 +971,9 @@
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body pt-0 fs-5 text-dark">Saya memiliki pengalaman 1.5+ tahun dalam web development dengan lebih dari 10 proyek yang telah diselesaikan dan 100+ jam coding. Selama ini saya terus belajar dan mengembangkan skill melalui berbagai proyek praktis.</div>
+                    <div class="accordion-body pt-0 fs-5 text-dark">Saya memiliki pengalaman 1.5+ tahun dalam web
+                      development dengan lebih dari 10 proyek yang telah diselesaikan dan 100+ jam coding. Selama ini
+                      saya terus belajar dan mengembangkan skill melalui berbagai proyek praktis.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -1169,7 +985,10 @@
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body pt-0 fs-5 text-dark">Selain coding, saya sangat menyukai sepakbola terutama FC Barcelona dan Lionel Messi, serta senang membaca manhwa dan manga seperti Lookism, Leveling with the Gods, Blue Lock, dan Naruto. Saya juga senang menghabiskan waktu berkualitas bersama pacar saya.</div>
+                    <div class="accordion-body pt-0 fs-5 text-dark">Selain coding, saya sangat menyukai sepakbola
+                      terutama FC Barcelona dan Lionel Messi, serta senang membaca manhwa dan manga seperti Lookism,
+                      Leveling with the Gods, Blue Lock, dan Naruto. Saya juga senang menghabiskan waktu berkualitas
+                      bersama pacar saya.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -1181,7 +1000,9 @@
                   </h2>
                   <div id="flush-collapseFour" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body pt-0 fs-5 text-dark">Anda dapat menghubungi saya melalui form kontak yang tersedia di website ini, atau langsung melalui email dan media sosial. Saya selalu terbuka untuk diskusi proyek baru, kolaborasi, atau sekadar bertukar ide tentang teknologi.</div>
+                    <div class="accordion-body pt-0 fs-5 text-dark">Anda dapat menghubungi saya melalui form kontak yang
+                      tersedia di website ini, atau langsung melalui email dan media sosial. Saya selalu terbuka untuk
+                      diskusi proyek baru, kolaborasi, atau sekadar bertukar ide tentang teknologi.</div>
                   </div>
                 </div>
                 <div class="accordion-item border-bottom">
@@ -1193,7 +1014,124 @@
                   </h2>
                   <div id="flush-collapseFive" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body pt-0 fs-5 text-dark">Ya, saya terbuka untuk proyek freelance dan kolaborasi! Saya senang bekerja pada proyek yang menantang dan bermakna. Silakan hubungi saya untuk mendiskusikan kebutuhan proyek Anda dan bagaimana saya bisa membantu.</div>
+                    <div class="accordion-body pt-0 fs-5 text-dark">Ya, saya terbuka untuk proyek freelance dan
+                      kolaborasi! Saya senang bekerja pada proyek yang menantang dan bermakna. Silakan hubungi saya
+                      untuk mendiskusikan kebutuhan proyek Anda dan bagaimana saya bisa membantu.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Featured Projects Section -->
+    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <div class="container">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">08</span>
+                <hr class="border-line">
+                <span class="badge text-bg-dark">Portfolio</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Featured projects</h2>
+                    <p class="fs-5 mb-0">A glimpse into our creativity—exploring innovative designs, successful
+                      collaborations, and transformative digital experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-projects-slider px-3">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="https://placehold.co/600x340/ec4899/ffffff?text=Lana+Developer" alt="" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="project-1.html"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Lana Developer Portfolio</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">TypeScript</span>
+                    <span class="badge text-dark border">Next.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="https://placehold.co/600x340/10b981/ffffff?text=Nutrition+AI+App" alt="" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="project-2.html"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Nutrition AI App</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">AI</span>
+                    <span class="badge text-dark border">Machine Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="https://placehold.co/600x340/8b5cf6/ffffff?text=Social+Web" alt="" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="project-3.html"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Social Web Platform</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">Next.js</span>
+                    <span class="badge text-dark border">React</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="https://placehold.co/600x340/6366f1/ffffff?text=Try+Rehearse+AI" alt="" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="project-4.html"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Try Rehearse AI</h3>
+                  <div class="hstack gap-2">
+                    <span class="badge text-dark border">AI</span>
+                    <span class="badge text-dark border">Interview</span>
                   </div>
                 </div>
               </div>
@@ -1223,7 +1161,8 @@
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
                     <h2 class="mb-0">Recent Fav Comic</h2>
-                    <p class="fs-5 mb-0 text-opacity-70">My top favorite manga and manhwa series that I'm currently reading and absolutely love—from action-packed adventures to epic storylines.</p>
+                    <p class="fs-5 mb-0 text-opacity-70">My top favorite manga and manhwa series that I'm currently
+                      reading and absolutely love—from action-packed adventures to epic storylines.</p>
                   </div>
                 </div>
               </div>
@@ -1233,8 +1172,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3">
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
-                <a href="comic-lookism.html"
-                  class="resources-img position-relative overflow-hidden d-block">
+                <a href="comic-lookism.html" class="resources-img position-relative overflow-hidden d-block">
                   <img src="../assets/images/komik/lookism/lookism-1.jpg" alt="Lookism" class="img-fluid">
                 </a>
                 <div class="resources-details d-flex flex-column gap-4">
@@ -1254,7 +1192,8 @@
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="150"
                 data-aos-duration="1000">
                 <a href="comic-leveling.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="../assets/images/komik/leveling/leveling-1.jpg" alt="Leveling with the Gods" class="img-fluid">
+                  <img src="../assets/images/komik/leveling/leveling-1.jpg" alt="Leveling with the Gods"
+                    class="img-fluid">
                 </a>
                 <div class="resources-details d-flex flex-column gap-4">
                   <div>
@@ -1311,7 +1250,8 @@
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="300"
                 data-aos-duration="1000">
                 <a href="comic-jujutsukaisen.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="../assets/images/komik/jujutsukaisen/jujutsukaisen-1.jpg" alt="Jujutsu Kaisen" class="img-fluid">
+                  <img src="../assets/images/komik/jujutsukaisen/jujutsukaisen-1.jpg" alt="Jujutsu Kaisen"
+                    class="img-fluid">
                 </a>
                 <div class="resources-details d-flex flex-column gap-4">
                   <div>
@@ -1368,7 +1308,8 @@
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="450"
                 data-aos-duration="1000">
                 <a href="comic-estatedeveloper.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="../assets/images/komik/estatedeveloper/estatedeveloper-1.jpg" alt="The Greatest Estate Developer" class="img-fluid">
+                  <img src="../assets/images/komik/estatedeveloper/estatedeveloper-1.jpg"
+                    alt="The Greatest Estate Developer" class="img-fluid">
                 </a>
                 <div class="resources-details d-flex flex-column gap-4">
                   <div>
@@ -1485,7 +1426,8 @@
         </div>
       </div>
     </div>
-  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="https://lana-developer.vercel.app/" target="_blank">Lana-Developer</a></p>
+    <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white"
+        href="https://lana-developer.vercel.app/" target="_blank">Lana-Developer</a></p>
   </footer>
 
   <div class="get-template hstack gap-2">
