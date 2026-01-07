@@ -1,4 +1,4 @@
-# 📚 UTS - Pemrograman Web Mobile (PMB)
+# 📚 UAS - Pemrograman Web Mobile (PMB)
 ## Personal Website: Hobby & Comic Collection
 
 ---
@@ -11,7 +11,7 @@
 ### 📖 Course Details
 - **Mata Kuliah**: Pemrograman Web Mobile SIA Ganjil 2025
 - **Dosen Pengampu**: Basuki Heri W - SA1919G
-- **Tipe Tugas**: UTS (Ujian Tengah Semester) Project
+- **Tipe Tugas**: UAS (Ujian Akhir Semester) Project
 - **Deadline**: Jumat, 21 November 2025 pukul 13:00 WIB
 
 ---
@@ -20,7 +20,7 @@
 
 ## 📋 Assignment Brief
 
-This project is an UTS assignment for the **Web Mobile Programming** course. The requirement is to create a beautiful Bootstrap-based website based on your personal hobbies.
+This project is an UAS assignment for the **Web Mobile Programming** course. The requirement is to create a beautiful Bootstrap-based website based on your personal hobbies.
 
 **Key Requirements:**
 - ✅ Bootstrap-based responsive web design
@@ -39,7 +39,7 @@ This project is an UTS assignment for the **Web Mobile Programming** course. The
 A modern, responsive portfolio website built with Bootstrap 5 featuring a comic collection showcase, project portfolio, and interactive parallax effects.
 
 - **Live Demo**: [View Demo](https://maulana-tech.github.io/UAS-PMB/)
-- **GitHub Repository**: [UTS Pemograman Mobile](https://github.com/maulana-tech/UAS-PMB.git)
+- **GitHub Repository**: [UAS Pemograman Mobile](https://github.com/maulana-tech/UAS-PMB.git)
 
 ## ✨ Features
 
@@ -50,7 +50,7 @@ A modern, responsive portfolio website built with Bootstrap 5 featuring a comic 
 - **Comics**: Curated manga/manhwa collection with detailed reviews
   - Blue Lock - Sports Drama
   - Naruto - Adventure/Fantasy
-  - Jujutsu Kaisen - Action/Supernatural
+  - JujUASu Kaisen - Action/Supernatural
   - One Punch Man - Action/Comedy
   - Solo Leveling - Fantasy/Action
   - Lookism - School/Supernatural
@@ -86,7 +86,7 @@ A modern, responsive portfolio website built with Bootstrap 5 featuring a comic 
 ## 📁 Project Structure
 
 ```
-UTS - PMB-1.0.0/
+UAS - PMB-1.0.0/
 ├── index.html                 # Home page
 ├── html/
 │   ├── about-us.html         # About section
@@ -134,7 +134,7 @@ UTS - PMB-1.0.0/
 1. **Clone the Repository**
 ```bash
 git clone https://github.com/maulana-tech/UAS-PMB.git.git
-cd UTS - PMB
+cd UAS - PMB
 ```
 
 2. **Open Locally**
