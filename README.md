@@ -38,8 +38,8 @@ This project is an UTS assignment for the **Web Mobile Programming** course. The
 
 A modern, responsive portfolio website built with Bootstrap 5 featuring a comic collection showcase, project portfolio, and interactive parallax effects.
 
-- **Live Demo**: [View Demo](https://maulana-tech.github.io/UTS-PMB/)
-- **GitHub Repository**: [UTS Pemograman Mobile](https://github.com/maulana-tech/UTS-PMB.git)
+- **Live Demo**: [View Demo](https://maulana-tech.github.io/UAS-PMB/)
+- **GitHub Repository**: [UTS Pemograman Mobile](https://github.com/maulana-tech/UAS-PMB.git)
 
 ## ✨ Features
 
@@ -133,7 +133,7 @@ UTS - PMB-1.0.0/
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/maulana-tech/UTS-PMB.git.git
+git clone https://github.com/maulana-tech/UAS-PMB.git.git
 cd UTS - PMB
 ```
 
